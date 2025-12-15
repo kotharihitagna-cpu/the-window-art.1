@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | The Window Art</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    :root {
+      --primary-color: #0076FF;
+      --text-color: #333333;
+      --bg-color: #f8f9fa;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    nav {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    nav img {
+      height: 45px;
+      width: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #666;
+      border-top: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    footer img {
+      height: 35px;
+      width: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    .floating-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+
+    main {
+      padding: 4rem 0;
+    }
+
+    h2, h3 {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li><strong><img src="the-window-art-logo.png" alt="The Window Art Logo"></strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="quotation.html" role="button">Get Free Quotation</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>About The Window Art</h2>
+          <h3>A Complete Solution of Glass & Aluminium</h3>
+        </hgroup>
+        <p><strong>The Window Art</strong> is a leading manufacturer, retailer, and service provider specializing in aluminium and glass solutions. Based in Ahmedabad, Gujarat, we bring innovation, quality, and precision to every project we undertake — from residential homes to large commercial spaces.</p>
+
+        <h3>Our Vision</h3>
+        <p>To be recognized as a trusted name in architectural aluminium and glass solutions by consistently delivering excellence, reliability, and modern design innovation.</p>
+
+        <h3>Our Mission</h3>
+        <p>To enhance spaces with functional, durable, and aesthetic aluminium-glass solutions — backed by professional design, expert manufacturing, and seamless installation services.</p>
+      </section>
+    </div>
+
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Why Choose Us</h2>
+          <h3>Trusted expertise and quality workmanship</h3>
+        </hgroup>
+        <ul>
+          <li><strong>End-to-End Solutions:</strong> From design and manufacturing to installation and after-sales service.</li>
+          <li><strong>Premium Quality Materials:</strong> We use top-grade aluminium and glass to ensure durability and elegance.</li>
+          <li><strong>Professional Team:</strong> Experienced technicians and designers who care about precision and performance.</li>
+          <li><strong>Customer-Centric Approach:</strong> Every project is tailored to meet client requirements and architectural vision.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="grid">
+      <section>
+        <h2>Serving Clients Across Gujarat</h2>
+        <p>We are proud to serve homeowners, architects, contractors, and developers across the state of Gujarat — delivering reliable, stylish, and long-lasting aluminium-glass solutions for every project.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <img src="the-window-art-logo.png" alt="The Window Art small logo">
+    <p><strong>The Window Art</strong><br>
+    288 Radheshyam, Jodhpur Gam, Satellite, Ahmedabad – 380015, Gujarat, India<br>
+    <a href="tel:+919712799997">+91 97127 99997</a> • 
+    <a href="mailto:thewindowartbydk@gmail.com">thewindowartbydk@gmail.com</a></p>
+    <small><a href="location.html">Location</a> • <a href="contact.html">Contact</a></small>
+    <p>Serving clients across Gujarat.</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919712799997" class="floating-whatsapp">💬 WhatsApp</a>
+
+</body>
+</html>

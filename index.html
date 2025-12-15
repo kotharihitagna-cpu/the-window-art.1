@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Window Art | A Complete Solution of Glass & Aluminium</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    :root {
+      --primary-color: #0076FF;
+      --text-color: #333333;
+      --bg-color: #f8f9fa;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      position: relative;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    nav img {
+      height: 45px;
+      width: auto;
+    }
+
+    /* Hero Section */
+    header.hero {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    header.hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    header.hero .overlay {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Hero text colors */
+    header.hero h1 {
+      color: var(--primary-color);
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    header.hero p {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    .cta-buttons a {
+      margin: 0.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+    }
+
+    .cta-buttons a.secondary {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    .floating-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #666;
+      border-top: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    footer img {
+      height: 35px;
+      width: auto;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li>
+        <strong>
+          <img src="the-window-art-logo.png" alt="The Window Art Logo">
+        </strong>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="quotation.html" role="button">Get Free Quotation</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <video autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+      <source src="assets/videos/hero.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <h1>The Window Art</h1>
+      <p>A complete solution of Glass & Aluminium</p>
+      <div class="cta-buttons">
+        <a href="quotation.html" role="button">Get Free Quotation</a>
+        <a href="tel:+919712799997" role="button" class="secondary">Call Now</a>
+        <a href="https://wa.me/919712799997" role="button" class="secondary">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="grid">
+      <section>
+        <hgroup>
+          <h2>Welcome to The Window Art</h2>
+          <h3>Professional Aluminium & Glass Solutions</h3>
+        </hgroup>
+        <p>Based in Ahmedabad, Gujarat, The Window Art is your trusted partner for aluminium and glass works. We handle design, manufacturing, supply, installation, and after-sales support — serving both residential and commercial projects across Gujarat.</p>
+
+        <h3>What We Offer</h3>
+        <p>From aluminium windows and doors to architectural façades and interior glass partitions, our team delivers quality craftsmanship and precision engineering.</p>
+
+        <h3>Serving Clients Across Gujarat</h3>
+        <p>We proudly serve homeowners, architects, builders, and developers across Gujarat, providing elegant and durable aluminium-glass solutions tailored to your design vision.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Subscribe / Enquiry Section -->
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Request a Free Quotation</h2>
+          <h3>Get expert guidance for your next project</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required>
+          <button type="submit" onclick="event.preventDefault()">Request Quotation</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <img src="the-window-art-logo.png" alt="The Window Art small logo">
+    <p><strong>The Window Art</strong><br>
+    288 Radheshyam, Jodhpur Gam, Satellite, Ahmedabad – 380015, Gujarat, India<br>
+    <a href="tel:+919712799997">+91 97127 99997</a> • 
+    <a href="mailto:thewindowartbydk@gmail.com">thewindowartbydk@gmail.com</a></p>
+    <small><a href="location.html">Location</a> • <a href="contact.html">Contact</a></small>
+    <p>Serving clients across Gujarat.</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919712799997" class="floating-whatsapp">💬 WhatsApp</a>
+
+</body>
+</html>

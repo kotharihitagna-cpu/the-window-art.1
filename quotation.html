@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Free Quotation | The Window Art</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    :root {
+      --primary-color: #0076FF;
+      --text-color: #333333;
+      --bg-color: #f8f9fa;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    nav {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    nav img {
+      height: 45px;
+      width: auto;
+    }
+
+    main {
+      padding: 4rem 0;
+    }
+
+    form input, form textarea {
+      margin-bottom: 1rem;
+    }
+
+    form button {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .cta-buttons {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .cta-buttons a {
+      margin: 0.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+    }
+
+    .cta-buttons a.secondary {
+      background-color: transparent;
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #666;
+      border-top: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    footer img {
+      height: 35px;
+      width: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    .floating-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li><strong><img src="the-window-art-logo.png" alt="The Window Art Logo"></strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="quotation.html" role="button">Get Free Quotation</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <hgroup>
+      <h2>Get a Free Quotation</h2>
+      <h3>Tell us about your project — we’ll get back with ideas and pricing</h3>
+    </hgroup>
+    <p>Fill out the form below to request a quotation. Since this website runs on static hosting, the form doesn’t auto-submit. Instead, after filling it out, you can share the details directly via WhatsApp, call, or email.</p>
+
+    <form class="grid">
+      <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Name" required>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" aria-label="Phone" required>
+      <input type="text" id="city" name="city" placeholder="City / Area" aria-label="City" required>
+      <select id="requirement" name="requirement" required>
+        <option value="">Select Requirement Type</option>
+        <option value="aluminium">Aluminium Work</option>
+        <option value="glass">Glass Work</option>
+        <option value="custom">Custom Solution</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea id="message" name="message" placeholder="Your Message / Project Details" rows="4" aria-label="Message" required></textarea>
+      <button type="submit" onclick="event.preventDefault()">Preview Details (Static Form)</button>
+    </form>
+
+    <div class="cta-buttons">
+      <a href="tel:+919712799997" role="button" class="secondary">📞 Call Now</a>
+      <a href="https://wa.me/919712799997" role="button">💬 Send on WhatsApp</a>
+      <a href="mailto:thewindowartbydk@gmail.com" role="button" class="secondary">📧 Email Us</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <img src="the-window-art-logo.png" alt="The Window Art small logo">
+    <p><strong>The Window Art</strong><br>
+    288 Radheshyam, Jodhpur Gam, Satellite, Ahmedabad – 380015, Gujarat, India<br>
+    <a href="tel:+919712799997">+91 97127 99997</a> • 
+    <a href="mailto:thewindowartbydk@gmail.com">thewindowartbydk@gmail.com</a></p>
+    <small><a href="location.html">Location</a> • <a href="contact.html">Contact</a></small>
+    <p>Serving clients across Gujarat.</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919712799997" class="floating-whatsapp">💬 WhatsApp</a>
+
+</body>
+</html>
