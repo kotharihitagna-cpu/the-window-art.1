@@ -8,13 +8,16 @@
   <style>
     :root {
       --primary-color: #0076FF;
-      --text-color: #333333;
-      --bg-color: #f8f9fa;
+      --text-color: #222222;
+      --bg-color: #ffffff;
     }
 
     body {
       background-color: var(--bg-color);
       color: var(--text-color);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
 
     nav {
@@ -44,8 +47,13 @@
       padding: 4rem 0;
     }
 
+    /* ✅ Fix faint text + consistent headings */
+    p, li {
+      color: #222 !important;
+    }
+
     h2, h3 {
-      color: var(--primary-color);
+      color: var(--primary-color) !important;
     }
 
     ul li {
