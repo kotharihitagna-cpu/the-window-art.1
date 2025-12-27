@@ -9,7 +9,7 @@
     :root {
       --primary-color: #0076FF;
       --text-color: #333333;
-      --bg-color: #f8f9fa;
+      --bg-color: #ffffff;
     }
 
     body {
@@ -17,6 +17,7 @@
       color: var(--text-color);
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
 
     /* Navigation */
@@ -49,7 +50,7 @@
     header.hero {
       position: relative;
       width: 100%;
-      height: 100vh; /* Full viewport height */
+      height: 100vh;
       margin: 0;
       padding: 0;
       overflow: hidden;
@@ -78,7 +79,7 @@
       padding: 2rem;
     }
 
-    /* Hero text colors */
+    /* Hero text */
     header.hero h1 {
       color: var(--primary-color);
       font-size: 3rem;
@@ -138,6 +139,15 @@
       height: 35px;
       width: auto;
       margin-bottom: 0.5rem;
+    }
+
+    /* ✅ Fix faint text issue & improve readability */
+    p, li {
+      color: #222 !important;
+    }
+
+    h2, h3 {
+      color: var(--primary-color);
     }
   </style>
 </head>
@@ -229,4 +239,3 @@
 
 </body>
 </html>
-
