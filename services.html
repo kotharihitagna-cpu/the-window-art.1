@@ -14,10 +14,15 @@
 
     body {
       background-color: var(--bg-color);
-      color: var(--text-color);
+      color: var(--text-color) !important;
       line-height: 1.6;
       margin: 0;
       padding: 0;
+    }
+
+    main, section, p, ul, li, article {
+      color: var(--text-color) !important;
+      font-weight: 500;
     }
 
     nav {
@@ -47,13 +52,9 @@
       padding: 4rem 0;
     }
 
-    /* ✅ Fix faint text + consistent headings */
-    p, li {
-      color: #222 !important;
-    }
-
     h2, h3 {
       color: var(--primary-color) !important;
+      font-weight: 700;
     }
 
     ul li {
@@ -63,7 +64,7 @@
     footer {
       text-align: center;
       padding: 2rem 0;
-      color: #666;
+      color: #666 !important;
       border-top: 1px solid #ddd;
       background-color: #fff;
     }
